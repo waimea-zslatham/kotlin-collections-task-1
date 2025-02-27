@@ -1,3 +1,20 @@
+/**
+ * =====================================================
+ * Kotlin Collections Task 1 - Monkeys
+ *
+ *    __v__
+ *   ( o o )   __v__
+ *    (---)   ( o o )
+ *             (---)
+ *
+ * Oh, no! There are monkeys loose in your house. You
+ * had better collect all their names so that you can
+ * report them to the authorities!
+ */
+
+
+
+
 fun main() {
     println("Kotlin Collections Task 1 - Monkeys")
     println("-----------------------------------")
