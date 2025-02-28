@@ -28,10 +28,10 @@ fun main() {
     monkeys.add("Jimmy")
     monkeys.add("Amy")
 
-    // Show the list of monkeys
-    println()
+    // Show the monkeys
     showMonkeys(monkeys)
-    println()
+    println(monkeyCounter(monkeys))
+    println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
     check(monkeys.count() == 3)
@@ -45,10 +45,9 @@ fun main() {
         getNewMonkey(monkeys)
     }
 
-    // Show the list of monkeys
-    println()
+    // Show the monkeys
     showMonkeys(monkeys)
-    println()
+    println(monkeyCounter(monkeys))
     println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
@@ -59,6 +58,12 @@ fun main() {
 
     // Delete the first monkey
     deleteFirstMonkey(monkeys)
+    println()
+
+    // Show the monkeys
+    showMonkeys(monkeys)
+    println(monkeyCounter(monkeys))
+    println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
     check(monkeys.count() == 5)
@@ -66,6 +71,11 @@ fun main() {
 
     // Delete the last monkey
     deleteLastMonkey(monkeys)
+
+    // Show the monkeys
+    showMonkeys(monkeys)
+    println(monkeyCounter(monkeys))
+    println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
     check(monkeys.count() == 4)
@@ -75,6 +85,12 @@ fun main() {
     for (i in 1..10) {
         deleteFirstMonkey(monkeys)
     }
+    println()
+
+    // Show the monkeys
+    showMonkeys(monkeys)
+    println(monkeyCounter(monkeys))
+    println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
     check(monkeys.count() == 4)
