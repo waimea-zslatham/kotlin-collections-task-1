@@ -31,11 +31,13 @@ fun main() {
     // Show the monkeys
     showMonkeys(monkeys)
     println(monkeyCounter(monkeys))
-    println("Longest Name: ${longestMonkeyName(monkeys)}")
 
     // Check the list
     check(monkeys.count() == 3)
     check(monkeyCounter(monkeys) == "There are 3 monkeys!")
+
+    // See which monkey has the longest name
+    println("Longest Name: ${longestMonkeyName(monkeys)}")
     check(longestMonkeyName(monkeys) == "Jimmy")
 
     // Adding Monkeys --------------------------------------------
@@ -58,7 +60,6 @@ fun main() {
 
     // Delete the first monkey
     deleteFirstMonkey(monkeys)
-    println()
 
     // Show the monkeys
     showMonkeys(monkeys)
@@ -85,7 +86,6 @@ fun main() {
     for (i in 1..10) {
         deleteFirstMonkey(monkeys)
     }
-    println()
 
     // Show the monkeys
     showMonkeys(monkeys)
@@ -112,7 +112,7 @@ fun showMonkeys(monkeyList: List<String>) {
     println("-------------------")
 
     // Loop through the given list and show each monkey
-
+    check(false)
 }
 
 
