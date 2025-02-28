@@ -110,7 +110,7 @@ fun getNewMonkey(monkeyList: MutableList<String>) {
     // Add the name to the list
 
     // Show some feedback
-    println("Added new monkey: $name")
+    println("Added new monkey: NAME HERE")
 }
 
 
@@ -144,7 +144,7 @@ fun deleteFirstMonkey(monkeyList: MutableList<String>) {
     // Remove the first one from the list
 
     // Show some feedback
-    println("Removing monkey: $name")
+    println("Removing monkey: NAME HERE")
 }
 
 
@@ -156,6 +156,6 @@ fun deleteLastMonkey(monkeyList: MutableList<String>) {
     // Remove the last one from the list
 
     // Show some feedback
-    println("Removing monkey: $name")
+    println("Removing monkey: NAME HERE")
 }
 
