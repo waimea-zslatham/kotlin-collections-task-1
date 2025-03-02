@@ -19,7 +19,7 @@ fun main() {
     println()
 
     // Create a list to store monkey names
-    val monkeys = null  // FIXME!
+    val monkeys = mutableListOf<String>()  //
 
     // Add in some test monkeys
     monkeys.add("Dave")
@@ -110,7 +110,9 @@ fun showMonkeys(monkeyList: List<String>) {
     println("-------------------")
 
     // Loop through the given list and show each monkey
-    check(false)   // FIXME: Remove this line and add your code
+    for ((i, name) in monkeyList.withIndex()) {
+        println("Monkey ${i + 1}: $name")
+    }
 }
 
 
