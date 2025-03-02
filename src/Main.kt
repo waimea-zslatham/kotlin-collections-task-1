@@ -13,8 +13,6 @@
  */
 
 
-
-
 fun main() {
     println("Kotlin Collections Task 1 - Monkeys")
     println("-----------------------------------")
