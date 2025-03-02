@@ -112,7 +112,7 @@ fun showMonkeys(monkeyList: List<String>) {
     println("-------------------")
 
     // Loop through the given list and show each monkey
-    check(false)
+    check(false)   // FIXME: Remove this line and add your code
 }
 
 
@@ -121,7 +121,7 @@ fun showMonkeys(monkeyList: List<String>) {
  * and then add it to the given monkey list
  */
 fun getNewMonkey(monkeyList: MutableList<String>) {
-    // Ask the user for a monkey name
+    // Ask the user for a monkey name (no blanks)
 
     // Add the name to the list
 
@@ -139,7 +139,7 @@ fun getNewMonkey(monkeyList: MutableList<String>) {
  */
 fun monkeyCounter(monkeyList: List<String>): String {
     // return the number of monkeys in the list
-    return ""
+    return "MONKEY COUNT MESSAGE"   // FIXME!
 }
 
 
@@ -148,7 +148,7 @@ fun monkeyCounter(monkeyList: List<String>): String {
  */
 fun longestMonkeyName(monkeyList: List<String>): String {
     // Loop through the list and find the longest name
-    return ""
+    return "MONKEY NAME HERE"   // FIXME!
 }
 
 
