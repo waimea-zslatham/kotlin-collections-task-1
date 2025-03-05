@@ -69,6 +69,7 @@ fun main() {
     check(monkeyCounter(monkeys) == "There are 5 monkeys!")
 
     // Delete the last monkey
+
     deleteLastMonkey(monkeys)
 
     // Show the monkeys
@@ -122,13 +123,18 @@ fun showMonkeys(monkeyList: List<String>) {
  */
 fun getNewMonkey(monkeyList: MutableList<String>) {
     // Ask the user for a monkey name (no blanks)
-    println("Add new monkey: ")
-    val userInput = readln()
+    while (true) {
 
-    // Add the name to the list
-    monkeyList.add(0, userInput)
-    // Show some feedback
-    println("Added new monkey: $userInput")
+        println("Add new monkey: ")
+        val userInput = readln()
+        if (userInput.isNotBlank()) {
+            // Add the name to the list
+            monkeyList.add(0, userInput)
+            // Show some feedback
+            println("Added new monkey: $userInput")
+            break
+        }
+    }
 }
 
 
@@ -141,8 +147,10 @@ fun getNewMonkey(monkeyList: MutableList<String>) {
  */
 fun monkeyCounter(monkeyList: List<String>): String {
     // return the number of monkeys in the list
-    val numMonkeys = monkeyList.size
-    return "There are $numMonkeys monkeys!"
+    if (monkeyList.isNotEmpty()) {
+        val numMonkeys = monkeyList.size
+        return "There are $numMonkeys monkeys!"
+    } else return "There are no monkeys!"
 }
 
 
@@ -167,9 +175,11 @@ fun longestMonkeyName(monkeyList: List<String>): String {
  */
 fun deleteFirstMonkey(monkeyList: MutableList<String>) {
     // Remove the first one from the list
-    val remove = monkeyList.removeAt(0)
-    // Show some feedback
-    return println("Removing monkey: $remove")
+    if (monkeyList.isNotEmpty()) {
+        val remove = monkeyList.removeAt(0)
+        // Show some feedback
+        println("Removing monkey: $remove")
+    }
 }
 
 
@@ -179,8 +189,7 @@ fun deleteFirstMonkey(monkeyList: MutableList<String>) {
  */
 fun deleteLastMonkey(monkeyList: MutableList<String>) {
     // Remove the last one from the list
-    val remove = monkeyList.remove(monkey)
+    val remove = monkeyList.removeAt(4)
     // Show some feedback
-    return println("Removing monkey: $remove")
+    println("Removing monkey: $remove")
 }
-
